@@ -111,11 +111,11 @@ Null не равен 0. Все остальные сравнения выдаю�
 
 function power(val, pow) {
     if (pow > 1) {
-        val *= val;
+        return val = val * power(val, pow - 1);
     }
-    else
+    else {
         return val;
-    power(val, pow - 1);
+    }
 }
 
 alert(power(2, 3));
