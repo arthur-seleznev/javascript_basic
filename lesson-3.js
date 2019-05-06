@@ -5,7 +5,7 @@ var endOfRange = 100;
 var divider;
 var dividerCounter;
 
-while (x <= 100) {
+while (x <= endOfRange) {
     divider = 2;
     dividerCounter = 0;
 
