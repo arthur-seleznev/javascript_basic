@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шахматная доска</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            margin: 200px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        .cell {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+
+        .dark {
+            background-color: black;
+        }
+
+        .light {
+            background-color: white;
+        }
+
+        .caption {
+            padding: 0px;
+            line-height: 50px;
+            position: absolute;
+        }
+
+        .letters {
+            top: -50px;
+            left: 15px;
+        }
+
+        .numbers {
+            left: -25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Board" class="container"></div>
+    <script src="chess.js"></script>
+</body>
+</html>
