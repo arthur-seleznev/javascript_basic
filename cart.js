@@ -1,9 +1,16 @@
 var cart = {
     items: [],
     addItem: function (name, qty, price) {
+        for (var i = 0; i < this.items.length; i++) {
+            if (this.items[i].name === name) {
+                this.items[i].qty += qty;
+                return;
+            }
+        }
+
         var item = {
             name: name,
-            qty: qty,
+            qty: +(qty),
             price: price,
         }
 
