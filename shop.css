@@ -1,0 +1,32 @@
+.catalog {
+    margin: 200px auto;
+    width: 1139px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 39px;
+}
+
+.info {
+    padding: 20px 14px;
+}
+
+.item-name {
+    display: block;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.item-price {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

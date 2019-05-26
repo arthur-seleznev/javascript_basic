@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lesson-7.js"></script>
+    <link rel="stylesheet" href="lesson-7.css">
+</head>
+<body>
+<div class="catalog"></div>
+<details open>
+    <summary>Корзина</summary>
+    <div class="cart"></div>
+</details>
+
+<details>
+    <summary>Адрес доставки</summary>
+    <div class="address">
+        <form action="#">
+            <p>Город</p>
+            <input type="text">
+            <p>Улица</p>
+            <input type="text">
+            <p>Дом</p>
+            <input type="text">
+            <button>Отправить</button>
+        </form>
+    </div>
+</details>
+<details>
+    <summary>Комментарий к заказу</summary>
+    <div class="comment">
+        <textarea name="comment" id="comment" placeholder="Комментарий к заказу" cols="30" rows="10"></textarea>
+        <button>Отправить</button>
+    </div>
+</details>
+
+<div class="modal closed">
+    <img src="#" alt="photo">
+    <div class="control">
+        <button class="controlBtn" id="previous">Предыдущее</button>
+        <button class="controlBtn" id="close">Закрыть</button>
+        <button class="controlBtn" id="next">Следующее</button>
+    </div>
+</div>
+
+</body>
+</html>
